@@ -1,0 +1,4 @@
+{
+  "extends": "@sillon/config/typescript/library.json",
+  "include": ["src"]
+}

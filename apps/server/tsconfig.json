@@ -1,0 +1,8 @@
+{
+  "extends": "@sillon/config/typescript/nestjs.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "."
+  },
+  "include": ["src", "test", "prisma.config.ts", "vitest.config.ts"]
+}

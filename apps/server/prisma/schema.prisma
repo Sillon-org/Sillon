@@ -1,0 +1,13 @@
+// Schéma Prisma de Sillon.
+// Les modèles arrivent story par story (User → KAN-17).
+
+generator client {
+  provider            = "prisma-client"
+  output              = "../src/generated/prisma"
+  moduleFormat        = "esm"
+  importFileExtension = "js"
+}
+
+datasource db {
+  provider = "postgresql"
+}

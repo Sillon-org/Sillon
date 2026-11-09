@@ -1,0 +1,54 @@
+.sillon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 var(--space-5);
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  font: 600 var(--text-md) / 1 var(--font-body);
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.sillon-btn:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.sillon-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sillon-btn--primary {
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+.sillon-btn--primary:hover:not(:disabled) {
+  background: var(--color-accent-hover);
+}
+
+.sillon-btn--secondary {
+  background: var(--color-surface-2);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.sillon-btn--secondary:hover:not(:disabled) {
+  border-color: var(--color-text-muted);
+}
+
+.sillon-btn--ghost {
+  background: transparent;
+  color: var(--color-text);
+}
+
+.sillon-btn--ghost:hover:not(:disabled) {
+  background: var(--color-surface);
+}
